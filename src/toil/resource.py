@@ -442,7 +442,7 @@ class ModuleDescriptor(namedtuple('ModuleDescriptor', ('dirPath', 'name', 'fromV
                 pass
             else:
                 raise ResourceException(
-                    "The user module '%s' collides with module '%s from '%s'." % (
+                    "The user module '%s' collides with module '%s' from '%s'." % (
                         name, colliding_module.__name__, colliding_module.__file__))
         finally:
             sys.path = old_sys_path
